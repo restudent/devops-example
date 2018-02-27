@@ -9,7 +9,7 @@ import * as beans from './gui-model/generated/forms'
 import {TranslationService} from "path-framework/app/path-framework/service/translation.service";
 import {ExampleTranslationService} from "./example-translation-service";
 
-@Compo nent({
+@Component({
     selector: 'path-application',
     templateUrl: './../../node_modules/path-framework/app/path-framework/path-app.component.html',
     providers: [path.PathService, { provide: TranslationService, useClass: ExampleTranslationService }]
